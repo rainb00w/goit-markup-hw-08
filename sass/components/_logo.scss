@@ -1,0 +1,25 @@
+.logo0 {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+
+    }
+  
+  }
+  
+  .logo1 {
+    color: var(--primary-text-color);
+  }
+  
+  .logo2 {
+    color: var(--primary-bg-color);
+  }  

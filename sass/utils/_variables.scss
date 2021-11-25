@@ -1,0 +1,97 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --accent-bg-color: #2f303a;
+  --icons-grey: #afb1b8;
+  --transition-time: 250ms;
+}
+
+body {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 320) {
+    overflow-x: hidden;
+  }
+
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+}
+
+.section {
+
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  }
+
+}
+
+
+
+
+// EXAMPLE
+
+// <picture>
+//                             <source media="(min-width: 1200px)"
+//                              srcset="./images/description/whatwedo.jpg 370w, images/description/whatwedo@2x.jpg 740w" sizes="33vw">
+//                              <source media="(min-width: 1200px)"
+//                              srcset="./images/description/whatwedo.webp 370w, images/description/whatwedo@2x.webp 740w" type="image/webp" sizes="33vw">
+//                              <img src="#" alt="Чем мы занимаемся" loading="lazy" /
+//                                 </picture>
+
+// Example
+
+// <picture>
+// <source
+//   srcset="
+//     ./images/team/team-1/team-1-270.webp    270w,
+//     ./images/team/team-1/team-1-270@2x.webp 540w,
+//     ./images/team/team-1/team-1-354.webp    354w,
+//     ./images/team/team-1/team-1-354@2x.webp 708w,
+//     ./images/team/team-1/team-1-450.webp    450w,
+//     ./images/team/team-1/team-1-450@2x.webp 900w
+//   "
+//   sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
+//   type="image/webp"
+// />
+// <img
+//   class="team__img"
+//   srcset="
+//     ./images/team/team-1/team-1-270.jpg    270w,
+//     ./images/team/team-1/team-1-270@2x.jpg 540w,
+//     ./images/team/team-1/team-1-354.jpg    354w,
+//     ./images/team/team-1/team-1-354@2x.jpg 708w,
+//     ./images/team/team-1/team-1-450.jpg    450w,
+//     ./images/team/team-1/team-1-450@2x.jpg 900w
+//   "
+//   src="./images/team/team-1/team-1-450.jpg"
+//   alt="Фотография сотрудника"
+//   sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
+// />
+// </picture>
